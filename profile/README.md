@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="./assets/kitpro-logo.png" width="112" alt="KITPro logo">
-</p>
-
 <h1 align="center">KITPro</h1>
 
 <p align="center"><strong>Practical technology for digital ownership.</strong></p>
