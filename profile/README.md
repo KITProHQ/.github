@@ -1,74 +1,62 @@
-<h1 align="center">KITPro</h1>
+# KITPro
 
-<p align="center"><strong>Practical technology for digital ownership.</strong></p>
+Practical technology for digital ownership.
 
-<p align="center">
-  KITPro builds open-source software and infrastructure that help people take control of their servers, data, and digital lives.
-</p>
+KITPro builds open-source software for people who want to understand and
+administer their own infrastructure. We focus on Linux servers, self-hosted
+applications, and systems that keep users in control of their data.
 
-<p align="center">
-  <a href="https://kitpro.us">Website</a> &bull;
-  <a href="https://github.com/orgs/KITProHQ/repositories">Projects</a> &bull;
-  <a href="https://github.com/KITProHQ/kitpro/tree/main/docs">Documentation</a>
-</p>
+[Website](https://kitpro.us) · [Blog](https://kitpro.us/blog) · [Documentation](https://github.com/KITProHQ/kitpro-linux/tree/main/docs) · [Releases](https://github.com/KITProHQ/kitpro-linux/releases) · [Public projects](https://github.com/orgs/KITProHQ/repositories)
 
-## Our mission
+## KITPro Linux Server · Released
 
-The systems people depend on should remain understandable and useful to the people who own them. KITPro exists to make self-hosting and personal infrastructure more approachable without taking control away from the user.
+An Arch-derived server distribution with controlled package promotion,
+guided installation, and recovery tools. **Version 1.1.0** was published on
+November 1, 2026, using generation `1.1-g0001`. Support runs through November 1,
+2027. Version 1.0 remains available under its original terms.
 
-We build around choice, not opposition to every cloud service. Local operation, open-source components, and accessible system boundaries reduce unnecessary dependence on any single provider. Our goal is simple: if KITPro disappeared tomorrow, users should still own their data and be able to administer their systems.
+The release requires x86_64 hardware and UEFI with Secure Boot disabled.
+General dual boot, RAID, and advanced multi-disk configurations are not
+qualified. Read the requirements and limitations before installing.
 
-## What we build
+[Product page](https://kitpro.us/linux-server) · [1.1.0 release and downloads](https://github.com/KITProHQ/kitpro-linux/releases/tag/v1.1.0) · [Source and documentation](https://github.com/KITProHQ/kitpro-linux)
 
-KITPro's work centers on practical tools for:
+## KITPro Installer · Included component
 
-- Self-hosting and server management
-- Local-first infrastructure
-- Linux-based systems with familiar tools underneath
-- Privacy-respecting personal infrastructure
-- User-owned services and data
+Installer **1.2.0** is included in Linux Server 1.1.0. It provides the guided
+installation interface within that qualified release. This component version
+does not represent a separate public Installer release.
 
-These areas describe the organization's technical direction. They do not represent a list of released products.
+[Linux Server installation guide](https://github.com/KITProHQ/kitpro-linux/blob/main/docs/1.1/installation-guide.md)
 
-## Projects
+## KITPro Console · In development
 
-### KITPro Server
+A self-hosted web console for Linux server administration and Docker
+application management. Console is in active development, with no stable
+Console release. It is optional and not installed by default in Linux Server
+1.1.
 
-KITPro Server is the first major open-source project from KITPro. It is a local-first control panel for installing and operating a trusted set of self-hosted applications on your own Linux server.
+Console is the presentation name announced on November 2, 2026 for the former
+KITPro Server project. Historical alpha.11 through alpha.15 releases keep that
+earlier name. Packages, services, paths, and APIs retain their `kitpro-server`
+technical identities.
 
-The public alpha provides a browser interface for application installation, health, access, updates, storage, and hardware status. Applications start private, managed data survives container recreation, and standard Linux and container tools remain available underneath.
+[Project and documentation](https://github.com/KITProHQ/kitpro) · [Historical alpha releases](https://github.com/KITProHQ/kitpro/releases)
 
-> [!WARNING]
-> KITPro Server is alpha software. Review the [support matrix](https://github.com/KITProHQ/kitpro/blob/main/docs/support-matrix.md) and [known limitations](https://github.com/KITProHQ/kitpro/blob/main/docs/release/known-limitations.md) before relying on it for important data.
+## Project principles
 
-<p align="center">
-  <img src="./assets/kitpro-server-dashboard.png" width="900" alt="KITPro Server dashboard showing server health and installed applications">
-</p>
+- Keep users in control of their infrastructure and data.
+- Use familiar Linux tools and inspectable source.
+- Document release scope, qualification evidence, and recovery limits.
+- Make administration understandable through clear documentation.
 
-<p align="center">
-  <a href="https://kitpro.us/server">Product page</a> &bull;
-  <a href="https://github.com/KITProHQ/kitpro">Repository</a> &bull;
-  <a href="https://github.com/KITProHQ/kitpro/blob/main/docs/release/quickstart.md">Get started</a> &bull;
-  <a href="https://github.com/KITProHQ/kitpro/releases">Releases</a>
-</p>
+Public repositories provide source, licenses, and release history. Check each
+project's license and contribution instructions before using or changing code.
 
-The public alpha supports Debian 13, Ubuntu 26.04 LTS, and fully updated Arch Linux within the documented runtime boundaries. Rocky Linux 10 remains **Experimental** and is not part of the normal supported baseline.
+## Support KITPro
 
-## Principles
-
-- **Ownership.** Users should control their infrastructure, data, and operational choices.
-- **Open by default.** Favor open-source components, open standards, and systems that people can inspect.
-- **No lock-in.** Simplify infrastructure without making continued operation depend on KITPro.
-- **Approachable technology.** Help people begin without requiring prior expertise in Linux, containers, networking, or infrastructure.
-- **Local first.** Keep core operation available on infrastructure the user controls without an unnecessary hosted dependency.
-- **Standard underneath.** Build on established technologies and keep the underlying system accessible whenever practical.
-
-## Open source
-
-KITPro develops its current software openly on GitHub. KITPro Server is available under the [Apache License 2.0](https://github.com/KITProHQ/kitpro/blob/main/LICENSE), with architecture, security boundaries, release notes, and development history available in its repository.
-
-## Get involved
-
-- Browse the [KITProHQ repositories](https://github.com/orgs/KITProHQ/repositories).
-- Report a KITPro Server bug or suggest an improvement through [GitHub Issues](https://github.com/KITProHQ/kitpro/issues).
-- Read the [contribution guide](https://github.com/KITProHQ/kitpro/blob/main/CONTRIBUTING.md) before submitting a change to KITPro Server.
+No active GitHub Sponsors destination is currently published for KITPro.
+You can support the projects by reporting reproducible bugs, improving
+documentation, and contributing within each repository's guidelines. Include
+the release and platform in issue reports so they can be assessed against the
+documented scope.
